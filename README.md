@@ -1,5 +1,5 @@
 # Certbot-LoopiaAPI
-Python script to automate Certbot renewal with LoopiaAPI using [`manual-auth-hook`](https://certbot.eff.org/docs/using.html#pre-and-post-validation-hooks).
+Python script to automate Certbot renewal of a wildcard certificate with LoopiaAPI using [`manual-auth-hook`](https://certbot.eff.org/docs/using.html#pre-and-post-validation-hooks).
 
 ## Usage
 Create a [LoopiaAPI user](https://www.loopia.se/api/). Then change `global_username` and `global_password` in `certbot_LoopiaAPI.py` to the correct user information. [Install Certbot](https://certbot.eff.org/).
