@@ -24,5 +24,5 @@ certbot certonly --manual -d *.example.com  --email mail@example.com --agree-tos
 crontab -e
 ```
 ```bash
-35 4 * */2 * certbot certonly --manual -d *.example.com  --email mail@example.com --agree-tos --no-bootstrap --manual-public-ip-logging-ok --preferred-challenges dns-01 --manual-auth-hook /path/to/certbot_LoopiaAPI.py --server https://acme-v02.api.letsencrypt.org/directory && service nginx restart
+35 4 * */2 * certbot certonly --manual -d *.example.com  --email mail@example.com --agree-tos --no-bootstrap --force-renewal --manual-public-ip-logging-ok --preferred-challenges dns-01 --manual-auth-hook /path/to/certbot_LoopiaAPI.py --server https://acme-v02.api.letsencrypt.org/directory && service nginx restart
 ```
